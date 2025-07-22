@@ -1,0 +1,282 @@
+Le 7 11 2024
+-------------
+focus sur année 2017.
+Doit s'ouvrir sur le panneau et non sur la première photo. ok.
+
+Le 8 11 2024
+------------
+2018 en cours. Compression des 12 images. faire suivre les 12 html
+
+diviser par 12 (8 %) les originales pour les small, et par 2 pour les full,
+les vraies s'appellent "r" (comme réel)
+
+
+LE 9 11 2024
+------------
+voir text4.html...et suivants
+
+Le 15 11 2024
+-------------
+
+2017 et 2018 complétés. En fait, le dossier 2018 s'applique à toutes les séries de 12, il faut juste mettre à jour "2018.html" dans les sources images.
+
+Le 28 11 2024
+--------------
+Nettoyage, introduction des "en construction"
+Dossiers recettes et chansons.
+
+Le 11 05 2025
+-------------
+voir Dossier ChatGPT_tests
+index marche.
+Test2 ne marche pas. 
+Pb des fonctions Java. Alert marche...
+Le passage des param pas résolu.
+Inclusion de 2014 dans le projet. Commentaires dans les css :  /*  */.
+
+Le 23 05 2025
+-------------
+Nouveaux 2017_sup, 2019 (Castelnou, Leucate). à suivre.
+
+Le 28 05 2025
+------------ 
+Travail sur une "adaptation" du script aux pdf sur "Chanson2"... en cours.
+ Le 29 05 : Nouveau script sur chanson2. OK. A faire sur les recettes... ok.
+
+Le 31 05 2025
+--------------
+Défilement avec photos_base. dans ChatGPT_tests. ok. à intégrer dans le site...
+
+Le 8 06 2025
+------------
+Intégration de la chanson 2025 dans chanson2,
+Allègement du site qui fait moins de un giga.
+Conseils de chatGPT pour un site provisoire...
+Dans "Archives/Travail", hors de Site_TTCnew.
+Essai de rotation d'une video... ok avec shotcut.
+V0, V1, V2 dans le dossier 025_Rivesaltes_videos.
+Reste à faire un html d'appel...
+
+Le 9 06 2025
+------------
+Inclusion des 3 videos Rivesaltes 2024 (St André).
+D'autres à faire... (faire "../" pour remonter dans le dossier supérieur...).
+4ème video RIvesaltes incluse.
+Chanson3 en vue... (videos). Fait.
+Année 2011 (Jura) nouvelle et faite.
+
+LE 10 06 2025
+--------------
+Chargement de Github.
+Il fallait ds fichiers de < 25 mo. Impossible avec les videos (coble, FD, etc..).
+Faire un nouveau site plus léger !
+Après St Mandrier...
+
+Le 19 06 2025
+-------------
+Nouveaux fichiers de Yves (photos), MC (photos), Hélène (Recettes). 
+Conversion chatGPT des docs en pdf. Attention, pas de blanc dans les noms, blocage
+si le pdf existe déjà. C'est la méthode 1 qui a marché, après un pip pour charger wordcom : convert_word_to_pdf("C:\\chemin\\vers\\le\\dossier").
+Intégration des 8 recettes HS dans le site.
+
+Le 22 06 2025
+-------------
+Début de correction des photos_Yves (sous-dossiers), Mise à jour de la photo 8 (papier-> vraie jpg), intégration de la 13 (8 à St Mandrier_2025).
+Création de python_2025 dans comm_2025.
+
+Le 23 06 2025
+-------------
+Pillow chargé 
+Essai de Redimage. OK pour (1000,1000), le 800 800 préconisé était trop petit.
+Passage de 131 Mo à 6 Mo !
+Et liste des noms dimages en prime !
+Nouveau python pour traiter tous les dossier à la fois !
+A tester.
+Presque, les images sont déformées, toutes carrées, (1000,1000).
+La fonction est plus sommaire que le programme pour un seul dossier.
+A revoir.
+Fait. La fonction a intégré les options de la première version et semble marcher correctement. 
+Attention aux images à 90 degrés...
+
+Le 24 06 2025
+-------------
+Dans List_image, obtention des listes de toutes les images de tous les dossiers.
+Voir résulats, Liste_brute et Liste_brute_n.
+D'autres mises en forme à faire.
+Travail dans python_2025 (Redim_image, List_image) voir Journal python 2025.
+Travail sur 2023. images_2023 -> images_2023s. Mise à jour site.
+idem pour 2011.
+Ajout à Photobase (Carousel) de la phto StGildas 2020 (sous la pluie).
+Urgent: mettre Souston_2024 (voir dossier dans Site_TTC).
+
+Le 25 06 2025
+-------------
+Gros fichiers: 2014, 2015, 2016 (142 Mo), Castelnou, Leucate, 2024_Riv, 2024_Riv_Videos (254 Mo), chanson3_video (79 Mo).
+Redim : pb Castelnou (90 deg)(fait), Leucate (fait à la main), Riv_2024 (fait).
+Un dossier Git dépassait 1 Giga !
+Site_TTCnew actuel : < de 500 Go. Reste à compresser les vidéos -> < de 25 Mo.
+
+LE 26 06 2025
+-------------
+Travail dans python_2025. Chatgpt pour réduire les vidéos. "python -m pip install SomePackage". pour ffmpeg.
+"python -m pip install ffmpeg".(OK!).
+Seul, moviepy marche, et encore seulement pour Patrick.mp4.
+ffmpeg.input(...) ne marche pas , ni son subprocess. 
+Echec aussi pour sardane_SA.mp4
+
+Le 27 06 2025
+--------------
+Création de Image_plus_audio  dans Python_2025. page html (chatgpt) pour la chanson  "Amis" en attendant de compresser les vidéos...
+
+Le 29 06 2025
+-------------
+Intégration de Amis dans chanson_Musique, ajout de Julos Beaucarne dans le pdf, de chanson2. (10 pdf actuellement).
+Copie dans Archive des photos reçues de Françoise. Reste à les dispatcher dans les rubriques existantes ou à créer de nouvelles rubriques (Dans TTC_gauche). Même chose pour Yves.
+
+Le 30 06 2025
+--------------
+Transformation du dossier Chansons2 pou absorber chansons. Odes à St Gildas et St mandrier (avec partition), "Il suffit...", Julos Beaucarne, rete le pb de "A 8", qui existe par ailleurs en audio et en vidéo... Actuellement, 11 chansons. 
+Le pb est souvent de retrouver les docs pour améliorer les pdf...
+Fusion et ajout de image15 (St_Gildas, 2023) dans photobase pour le carrousel...
+Ajout de 2008_Jura et2009_Chaux (suppression de "Avant 2010"). Dossier Photo_Yves Compressé dans Python_2025/List_images...
+
+LE 1 07 2025
+------------
+Toujours dans Python_2025_List_image : Dossier Photos TTC Yves_out2 : chaque sous-dossier est dédoublé, le html et les css script ajoutés et à mettre à jour avec le fichier Résultats.
+Puis à intégrer avec (Y).
+Ajout de 2010, 2011, 2012 (pas encore dans TTC_Gauche.html...).
+
+Le 2 07 2025
+------------
+Suite (Python_2025/Listimage) Ajout jusqu'en 2023 inclus.
+Modèle page2.html pour une année qui appelle plusieurs recueils. (dans Python_2025).
+dernière version, avec css, page2pages
+
+Le 3 07 2025
+------------
+Suite dans Ah_Site_TTC/Site_TTCnew ...
+Intégration des photos de Yves --> 2018 inclus.
+
+Le 4 07 2025
+------------
+Dans Ah_Site_TTC/TTC/Site_TTCnew/2024_Rivesaltes_Videos
+essai laborieux et réussi de coupure de la video cobla_sardane. 
+Voir le fichier texte chatgpt de ce dossier...
+
+Le 5 07 2025
+------------
+Arial dans Welcome (suggestion de Luce, et son template chatgpt).
+Suppression du TTC_haut, inutile...(juste TTC...).
+
+Exemple de changement de police et couleur de titre h3 : dans Ah_Site_TTC/TTC/Site_TTCnew/2024_Rivesaltes_Videos/V3/2024_Rivesaltes_Video3.html
+
+<p><h3 style="color:rgb(200,200,0);"><font-family: Arial > TTC_2024_Rivesaltes (video) <br> Cobla + Sardane </br> </font></h3></p>
+Autres commandes : 1) <p style="color:rgb(255,0,0);">Red paragraph text</p>
+ 2) <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>  --> tout le texte en Arial.
+
+Regroupement par années -> 2019 inclus (à vérifier pour 2019 et Yves).
+Bon jusqu'à 2018. IL faut ajouter STMAndrier 2019. Voir site original...
+
+Le 6 07 2025
+------------
+2019, 2020, 2023,2024 faits. 21 et 22 vides et absents du menu.
+Insertion de la video "Sardane" tronquée dans 2024... 
+Bouton "retour" ajouté, à mettre partout ? Exemple :
+<body><a href="../date.html"><img src="home.png"> Retour</a> (et mettre le home.png).
+
+Le 8 07 2025
+------------
+Retour ok pour 2024.
+Pour les autres: mettre le css de 2023 (interne aux sous-dossiers), et ajouter la ligne retour. Ne pas oublier l'image "home". 2023 fait .
+
+Le 9 07 2025
+-------------
+2018 ne fonctionnait pas.  Récupération grace à l'USB de sauvegarde...
+Mettre les "retours" sur toutes les années...
+
+Le 10 07 2025
+-------------
+Mise en Arial des différentes années (dans les :date.html).
+Les retours restent à compléter.
+Année 2021 : modèle pour les suites de vidéos ?
+
+Le 11 07 2025
+-------------
+Retours à faire de 2008 à 2020.
+Divers changement de polices. Suppression de "chanson2", intégraton de "A huit" dans les pdf. Retours faits. 
+
+Le 12 08 2025
+-------------
+Compression de "Amis" réussie avec Bloc-moviepy2.py dans Python_2025/Compression_11_07.
+Voir aussi le "Chatgpt_cut_video.txt" dans le même dossier...
+Chatgpt pour juxtaposer videos et textes (même dossier).
+
+Le 13 07 2025
+-------------
+Dans TTC_2024/TTC/2023/StGIldas_2023, nouvelles photos et video bateau (100 Mo, à compresser rudement). Seule la vidéo est à récupérer (troncage et compression indispensables).
+Succès de video + texte pour "A huit".
+Début, pour 2008 - 2011  , du regroupement des années. OK. dans "Ah_Site_Test". 
+Suite pour 2012-2016. OK.
+Pour la suite:
+1) créer le nouveau dossier D  2017-2020 (par exemple). 
+2) Prendre un "date", l'appeler date1, le copier dans D, avec css et home.png. 
+3) Copier tous les dossiers images des annés 17-20.
+4) Ouvrir successivement tous les dossiers date des années 17-20 et copier les "<li> dans le date1.
+5) Mettre à jor TTC_gauche. 
+6) Appeler date1 : date . Normalement, ok...
+
+Le 14 07 2025
+-------------
+Le nouveau dossier 2017-2018 a été créé. Le prochain devrait être 2019-2021. Attention : Introduire les retours dans les videos avec miniatures.
+2019-2021 et 2022-225 faits. Chanson_musique fait (avec "date") et intégré, avec Amis en audio + texte et Video + texte. (Du coup, les deux videos "chêne" intégrées). 
+Reste à comprimer les autres chansons et faire de même...
+Voir le nouveau chatgpt dans compression_11_07 dans python_2025, pour compresser FD.mp4...
+après les échecs de blocmoviepy.
+
+Le 15 07 2025
+-------------
+Succés de la compression ffmpeg en ligne de commande de Chanson_FD.mp4 dans compression_07_11. 
+Insertion dans Chansons_Musiques du site (test). Sauvegarde sur clé usb. 
+
+Le 16 07 2025
+-------------
+Compression de la sardane_FD (en deux étapes), et insertion dans 2022-2025. Voir : truc_ligne_commande.txt dans compression_11_07 dans Python_2025...
+
+Le 17 07 2025
+-------------
+Compression et insertion de "Julos_cafouillage" dans Chansons_musique. 
+Compression et ajout de la vidéo "Houat". ok.
+Nouveau dossier à intégrer 2022, envoi de FD en 2025 (pris sur les archives USB...). Photos copiées dans le dossier contenant 2022...
+
+Le 18 07 2025
+-------------
+Reste à faire la liste python pour 2022, et à intégrer dans le site...
+
+Le 19 07 2025
+-------------
+2022 fait. Diverses petites modifs de police/couleur (historic...).
+Tentatives GitHub : échecs dus aux videos trop grandes. Voir notes papiers pour mot de passe, ident,...; et git push origin HEAD:master...
+
+Le 20 07 2025
+--------------
+Toujours impossible de charger alors que le dossier TTC_hmcf26 ne contient plus les grandes videos...
+Tentative de vider le site échouée... Voir le chatgpt dans Ah_Site_Test...(Chat_Git_vidange)
+Création de TTC dans Ah_Site_Test.
+
+Le 21 07 2025
+-------------
+Chargement aparemment réussi. Voir copies d'écran dans: BAO (Boîte à Outils) dans Ah_Site_Test.
+Echec car il fallait remplacer main par master...
+OK, fonctionne sur internet ! Mais les accents ne sont pas acceptés dans les noms de dossier, et Hélène pose pb.
+Fichier maj dans la BAO.
+A suivre...
+Remplacement du repository laborieux, reste à mettre le site à jour. Le site sur MINGW64 est ok . Il reste à le transférer. Celui qu'on voit sur github.com est l'ancien. 
+
+Le 22 07 2025
+-------------
+Création de TTCn dans github.com (ludoriv) . Tioublipa:   mdp Sefrou_GH25
+Premier echec '(TTC_Gauche.html manquait dans TTC (Ah_Site_Test) ).
